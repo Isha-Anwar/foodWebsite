@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - MY Foodcourt</title>
+    <link rel="stylesheet" href="contact.css" />
+    <script src="contact.js" defer></script>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="header-top">
+            <span class="menu-icon" onclick="openSidebar()">&#9776;</span>
+            <div class="header-card">
+                <h1><i class="fas fa-utensils"></i> MY Foodcourt</h1>
+                <p>Get in touch with us — we’d love to hear from you!</p>
+            </div>
+            <button id="darkModeToggle">Toggle Dark Mode</button>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+    </div>
+
+    <main class="contact-section">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, suggestions, or just want to say hello — send us a message!</p>
+
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+            <input type="text" placeholder="Your Name" name="name" required />
+            <input type="email" placeholder="Your Email" name="email" required />
+            <textarea placeholder="Your Message" name="message" rows="6" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <h3>Our Location</h3>
+            <p><strong>Address:</strong> 123 Food Street, Snack City, Pakistan</p>
+            <p><strong>Phone:</strong> <a href="tel:+921234567890">+92 123 456 7890</a></p>
+            <p><strong>Email:</strong> <a href="mailto:info@myfoodcourt.com">info@myfoodcourt.com</a></p>
+        </div>
+        <div> &copy; <span id="year"></span> MY Foodcourt. All rights reserved.</div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Food Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+
+<body>
+  <div class="page-container">
+    <!-- Header -->
+    <header class="main-header">
+      <div class="header-top">
+        <span class="menu-icon" onclick="openSidebar()">&#9776;</span>
+        <div class="header-card">
+          
+          <h1><i class="fas fa-utensils"></i> MY Foodcourt</h1>
+          <p>Welcome to the ultimate food paradise — fast food, desserts, and more!</p>
+        </div>
+        <button id="darkModeToggle">
+          Toggle Dark Mode
+        </button>
+      </div>
+    </header>
+    <div>
+      <h3>
+        Hey! this is my kitchen. Here you’ll find a variety of food items, including fast food like
+        different kinds of burgers, pizzas, spaghetti, lasagna, and non-veg dishes with vegetables, plus a lot of
+        desserts.
+        Check the food items and their details, and feel free to order!
+      </h3>
+      <h2>You can check the list of items here:</h2>
+    </div>
+
+
+    <!-- Sidebar Navigation -->
+    <div id="sidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+
+    <!-- Search -->
+    <input type="text" id="searchBox" placeholder="Search food..." />
+
+    <!-- Tabs -->
+    <section class="menu-tabs">
+      <div class="tab-buttons">
+        <button class="tab-btn active" data-tab="fastfood">🍔 Fast Food</button>
+        <button class="tab-btn" data-tab="desserts">🍰 Desserts</button>
+      </div>
+
+      <!-- Fast Food Tab -->
+      <div class="tab-content active" id="fastfood">
+        <h2 class="section-title">🍔 Fast Food Items</h2>
+        <div class="gallery">
+
+          <figure>
+            <a href="order.html?item=Special%20Jumbo%20Zinger%20Burger">
+              <img src="Jumbo Burger.jpg" alt="Special Jumbo Zinger Burger" />
+            </a>
+            <figcaption>Special Jumbo Zinger Burger</figcaption>
+          </figure>
+
+          <figure>
+            <a href="order.html?item=Pizza">
+              <img src="Pan Pizza.jpg" alt="Pan Pizza" />
+            </a>
+            <figcaption>Pan Pizza</figcaption>
+          </figure>
+
+          <figure>
+            <a href="order.html?item=Lasagna">
+              <img src="Handi.jpg" alt="Handi" />
+            </a>
+            <figcaption>Handi</figcaption>
+          </figure>
+
+          <figure>
+            <a href="order.html?item=Fries">
+              <img src="Burger and fries.jpg" alt="Burger and Fries" />
+            </a>
+            <figcaption>Burger and Fries</figcaption>
+          </figure>
+
+          <figure>
+            <a href="order.html?item=Club%20Sandwich">
+              <img src="Fresh vegs.jpg" alt="Fresh vegs" />
+            </a>
+            <figcaption>Fresh vegetables</figcaption>
+          </figure>
+
+          <figure>
+            <a href="order.html?item=Broast">
+              <img src="Beef Burger.png" alt="Beef Burger" />
+            </a>
+            <figcaption>Beef Burger</figcaption>
+          </figure>
+
+          <figure>
+            <a href="order.html?item=Shawarma">
+              <img src="Brinjal Nuggets.png" alt="Brinjal Nuggets" />
+            </a>
+            <figcaption>Brinjal Nuggets</figcaption>
+          </figure>
+
+          <figure>
+            <a href="order.html?item=Mac%20&%20Cheese">
+              <img src="Mac n Cheese.jpg" alt="Mac and Cheese" />
+            </a>
+            <figcaption>Mac & Cheese</figcaption>
+          </figure>
+
+          <figure>
+            <a href="order.html?item=Chilli%20Chicken">
+              <img src="chilli.jpg" alt="Chilli Chicken" />
+            </a>
+            <figcaption>Chilli Chicken</figcaption>
+          </figure>
+
+          <figure>
+            <a href="order.html?item=Fruit%20Salad">
+              <img src="fruit salad.jpg" alt="Fruit Salad" />
+            </a>
+            <figcaption>Fruit Salad</figcaption>
+          </figure>
+
+          <figure>
+            <a href="order.html?item=Gola%20Kabab">
+              <img src="Gola Kabab.jpg" alt="Gola Kabab" />
+            </a>
+            <figcaption>Gola Kabab</figcaption>
+          </figure>
+
+          <figure>
+            <a href="order.html?item=Hot%20Dogs">
+              <img src="Hot dogs.jpg" alt="Hot Dogs" />
+            </a>
+            <figcaption>Hot Dogs</figcaption>
+          </figure>
+
+          <figure>
+            <a href="order.html?item=Salad">
+              <img src="salad.jpg" alt="Salad" />
+            </a>
+            <figcaption>Salad</figcaption>
+          </figure>
+
+          <figure>
+            <a href="order.html?item=Shashlik">
+              <img src="Shshlik.jpg" alt="Shashlik" />
+            </a>
+            <figcaption>Shashlik</figcaption>
+          </figure>
+
+          <figure>
+            <a href="order.html?item=Vegetables">
+              <img src="veges.jpg" alt="Vegetables" />
+            </a>
+            <figcaption>Vegetables</figcaption>
+          </figure>
+
+        </div>
+      </div>
+
+      <!-- Desserts Tab -->
+      <div class="tab-content" id="desserts">
+        <h2 class="section-title">🍰 Desserts</h2>
+        <div class="gallery">
+
+          <figure>
+            <a href="order.html?item=Chocolate%20Smoothie">
+              <img src="Chocolate shake.jpg" alt="Chocolate Smoothie" />
+            </a>
+            <figcaption>Chocolate Smoothie</figcaption>
+          </figure>
+
+          <figure>
+            <a href="order.html?item=Choco%20Balls">
+              <img src="choco balls.jpg" alt="Choco Balls" />
+            </a>
+            <figcaption>Choco Balls</figcaption>
+          </figure>
+
+          <figure>
+            <a href="order.html?item=Choco%20Cake">
+              <img src="choco cake.jpg" alt="Choco Cake" />
+            </a>
+            <figcaption>Choco Cake</figcaption>
+          </figure>
+
+          <figure>
+            <a href="order.html?item=Egg%20Pudding">
+              <img src="egg pudding.jpg" alt="Egg Pudding" />
+            </a>
+            <figcaption>Egg Pudding</figcaption>
+          </figure>
+
+          <figure>
+            <a href="order.html?item=Cream%20Cake">
+              <img src="Cream cake.jpg" alt="Cream Cake" />
+            </a>
+            <figcaption>Cream Cake</figcaption>
+          </figure>
+
+          <figure>
+            <a href="order.html?item=Doughnuts">
+              <img src="Doughnuts.jpg" alt="Doughnuts" />
+            </a>
+            <figcaption>Doughnuts</figcaption>
+          </figure>
+
+          <figure>
+            <a href="order.html?item=Dry%20Cake">
+              <img src="dry cake.jpg" alt="Dry Cake" />
+            </a>
+            <figcaption>Dry Cake</figcaption>
+          </figure>
+
+          <figure>
+            <a href="order.html?item=Strawberry%20Cake">
+              <img src="Strawbeery pan cakes.jpg" alt="Strawberry Cake" />
+            </a>
+            <figcaption>Strawberry Cake</figcaption>
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Order Now Section -->
+    <div class="gallery order-now">
+      <figure>
+        <a href="order.html">
+          <img src="ordernow.png" alt="Order Now" />
+        </a>
+        <figcaption>ORDER NOW!</figcaption>
+      </figure>
+      <figure>
+        <a href="try-drinks.html">
+          <img src="drinks (2).jpg" alt="Try Out" />
+        </a>
+        <figcaption>TRY OUT!!!</figcaption>
+      </figure>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-banner">
+      <h2>Thank You for Visiting!</h2>
+      <p>We hope you enjoyed browsing our menu. Your feedback helps us improve!</p>
+      <a href="mailto:feedback@ishasfoodcourt.com" class="contact-link"><i class="fas fa-envelope"></i> Send
+        Feedback</a>
+      <a href="https://goo.gl/maps/example" target="_blank" class="location-link"><i class="fas fa-map-marker-alt"></i>
+        Find Us</a>
+      <a href="tel:+1234567890" class="phone-link"><i class="fas fa-phone"></i> Call Us</a>
+      <img src="mobile.png" alt="Mobile App" />
+
+      <!-- Image Modal -->
+      <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg" />
+        <div id="caption"></div>
+      </div>
+
+
+      <footer class="footer">
+        &copy; <span id="year"></span> YourFoodSite. All rights reserved.
+      </footer>
+
+      <script src="script.js"></script>
+</body>
+
+</html>

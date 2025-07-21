@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - MY Foodcourt</title>
+    <link rel="stylesheet" href="about.css" />
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="header-top">
+            <span class="menu-icon" onclick="openSidebar()">&#9776;</span>
+            <div class="header-card">
+                <h1><i class="fas fa-utensils"></i> MY Foodcourt</h1>
+                <p>Bringing flavors together since 2020</p>
+            </div>
+            <button id="darkModeToggle">Toggle Dark Mode</button>
+        </div>
+    </header>
+
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <main class="about-section">
+        <h2>About MY Foodcourt</h2>
+        <p>Welcome to MY Foodcourt — your go-to destination for fast food, desserts, and delightful snacks. Since 2020,
+            we've served thousands of happy customers with fresh, flavorful meals made with love and premium
+            ingredients.</p>
+
+        <p>Whether you're in the mood for crispy fries, cheesy pizzas, refreshing drinks, or creamy desserts, our menu
+            has something for everyone. We believe in delivering happiness, one bite at a time.</p>
+
+        <h3>Why Choose Us?</h3>
+        <ul>
+            <li>✅ High-quality and hygienic food</li>
+            <li>✅ Fast service and friendly staff</li>
+            <li>✅ Affordable prices</li>
+            <li>✅ Cozy ambiance and family-friendly environment</li>
+        </ul>
+
+        <section class="team">
+            <h3>Meet Our Team</h3>
+            <div class="team-cards">
+                <div class="card">
+                    <img src="manager.jpg" alt="Manager" />
+                    <h4>Sarah Ahmed</h4>
+                    <p>Founder & Manager</p>
+                </div>
+                <div class="card">
+                    <img src="chef.jpg" alt="Chef" />
+                    <h4>Ali Khan</h4>
+                    <p>Head Chef</p>
+                </div>
+                <div class="card">
+                    <img src="maerketer.jpg" alt="Marketing" />
+                    <h4>Maria Malik</h4>
+                    <p>Marketing Lead</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <h3>Our Location</h3>
+            <p><strong>Address:</strong> 123 Food Street, Snack City, Pakistan</p>
+            <p><strong>Phone:</strong> <a href="tel:+921234567890">+92 123 456 7890</a></p>
+            <p><strong>Email:</strong> <a href="mailto:info@myfoodcourt.com">info@myfoodcourt.com</a></p>
+        </div>
+        <div> &copy; <span id="year"></span> MY Foodcourt. All rights reserved.</div>
+    </footer>
+    <script src="about.js"></script>
+</body>
+
+</html>
